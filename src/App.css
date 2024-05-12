@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+}
+
+body{
+background-color: rgb(35, 35, 35);
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.text-navbar-white {
+  color: white !important;
+}
+
+.bg-navbar-black {
+  background-color: black !important;
+}
+
+.bg-button-gray {
+  background-color: #808080;
+  color: white;
+}
+
+span.carousel-control-prev-icon{
+  width: 30%;
+  height: 30%;
+}
+
+span.carousel-control-next-icon{
+  width: 30%;
+  height: 30%;
+}
+
+
+.button-space {
+  width: 10%;
+}
+
+
+.CardMovieDetail{
+  margin-top: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 2%;
+  display: flex;
+  height: 40%;
+  border: solid 1px grey;
+  border-radius: 20px;
+  background-color: rgb(249, 241, 232);
+}
+
+.blocDetail{
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: solid 1px rgb(223, 223, 223);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #150808;
+  color: aliceblue;
+  border-radius: 0 20px 20px 0;
+  margin-left: 1%;
+}
+
+.PosterMovieDetail{
+  border-radius: 20px 0 0 20px ;
+}
+
+.BoutonsDetail{
+  margin-bottom: 10%;
+}
+
+.AddFavories{
+  margin-right: 10%;
+  border-radius: 20px;
+  height: 3rem;
+  font-weight: bolder;
+}
+
+.AddFavories:hover{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  background-color: rgb(59, 3, 3);
+  color: aliceblue;
+  border: solid 1px white;
+}
+
+.RemoveFav{
+  margin-right: 10%;
+  border-radius: 20px;
+  height: 3rem;
+  font-weight: bolder;
+  background-color: rgb(153, 120, 242);
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.RemoveFav:hover{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  background-color: rgb(101, 96, 96);
+  color: aliceblue;
+  border: solid 1px white;
+
+}
+
+.RemoveFavories{
+  border-radius: 20px;
+  height: 3rem;
+  font-weight: bolder;
+
+}
+
+.RemoveFavories:hover {
+  background-color: rgb(164, 2, 2);
+  color: aliceblue;
+  border: solid 1px white;
+}
+
+.CardSearch{
+  background-color: #c7c6c6;
+  margin: 0;
+}
+
+p, h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Resume{
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.DecriptionMovie{
+  border: solid 0.5px white;
+  padding: 2%;
+  border-radius: 25px;
+}
+
+.CardFavMovi{
+  border: 1px solid rgba(128, 128, 128, 0.468);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+  margin-left: 80px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 20%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 5%;
+  background-color: #978585;
+  width: 100%;
+  padding-right: 6%;
+  padding-bottom: 5%;
+  
+}
+
+.CardFavMovi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(212, 214, 215);
+}
+
+.imageFav {
+  width: 90%;
+  margin-top: 10%;
+  border-radius: 15px;
+}
+
+
+.titreFav{
+  margin-top: 5%;
+
+}
+
+.boutonFavPage{
+  margin-top: 5%;
+  border-radius: 25px;
+  background-color: #3d0606;
+  color: aliceblue;
+}
+
+.boutonFavPage:hover{
+  background-color: aliceblue;
+  color: #150808;
+}

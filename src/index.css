@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(47, 46, 46);
+  color: white;
+}
+
+.Header {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  display: flex;
+  align-items: center;
+  border: solid 1px grey;
+}
+
+#Favories{
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: rgb(74, 60, 91);
+  color: white;
+  border: solid 1px white;
+  margin-top: 8px;
+  margin-left: 70%;
+  box-shadow: 2px 2px 2px 2px rgb(203, 201, 201);
+   
+}
+
+#Search {
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+  margin-left: 30px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.logoTitre {
+  display: flex;
+}
