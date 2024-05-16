@@ -1,4 +1,4 @@
-Application de films et séries utilisant une API
+Application de films et séries utilisant une API TMBD: https://developer.themoviedb.org/reference/intro/getting-started
 
 
 
