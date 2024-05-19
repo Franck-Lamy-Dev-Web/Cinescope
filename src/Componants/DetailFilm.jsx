@@ -89,7 +89,7 @@ const Detailfilm = () => {
                                 className={favorite ? "RemoveFav" : "AddFavories"}
                                 onClick={favorite ? removeFromFav : favoriteMovie}
                             >
-                                <FontAwesomeIcon icon={faHeart} style={{ marginRight: '5px', color: favorite ? 'red' : 'black' }} />
+                                <FontAwesomeIcon icon={faHeart} style={{ marginRight: '0.32px', color: favorite ? 'red' : 'black' }} />
                                 <span>
                                     {favorite ? "Retirer des favoris" : "Ajouter aux favoris"}
                                 </span>
