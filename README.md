@@ -1,3 +1,13 @@
+Application de films et séries utilisant une API TMBD: https://developer.themoviedb.org/reference/intro/getting-started
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
