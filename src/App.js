@@ -7,6 +7,7 @@ import NavSearch from './Componants/Header';
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PagesEnConstruction from './Componants/PagesEnConstruction';
+import Footer from './Componants/Footer';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
           <Route path="/" element={<AccueilFilm />} />
           <Route path='/PageEnConstruction' element={<PagesEnConstruction/>}/>
         </Routes>
+
       </BrowserRouter>
+        <Footer/>
     </div>
   );
 }
