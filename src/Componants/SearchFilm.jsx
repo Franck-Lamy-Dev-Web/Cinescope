@@ -50,7 +50,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import CardFilm from "./CardFilm";
+import Cardfilm from "./CardFilm";
 
 function SearchFilm() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -88,22 +88,16 @@ function SearchFilm() {
         <h1 className='titreBar'>CinéScope</h1>
         <input className='w-25 m-lg-4' size="lg" type="text" placeholder="Titre de film" onChange={(event) => setSearchTerm(event.target.value)} />
       </div>
-
-      <div className='d-flex justify-content flex-wrap m-2 ' style={{backgroundColor:'black'}} >
-        <div className='w-100'></div>  
-        <div className='d-flex justify-content flex-lg-wrap'>
-          {films.map((movie, index) => (
-            <div key={index} className='w-25'>
-              <div className='card w-60 m-4'>
-                <img className="card-img-top" src={movie.poster_path} alt="Affiche film" />
-                <h5 className='card-name m-2'>{movie.titre}</h5>
-              </div>
-            </div>
-          ))}
-        </div>
+  
+      <div className='d-flex justify-content flex-wrap m-2' style={{ backgroundColor: 'black' }}>
+        {films.map((movie) => (
+          <div key={movie.id} className='w-25'>
+            <Cardfilm movie={movie} />
+          </div>
+        ))}
       </div>
     </>
   );
-}
+  }
 
 export default SearchFilm;
