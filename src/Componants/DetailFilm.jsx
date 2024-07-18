@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const Detailfilm = () => {
     const [film, setFilm] = useState(null);
@@ -36,7 +38,6 @@ const Detailfilm = () => {
     }, [film]);
 
     const favoriteMovie = () => {
-
         let tabFavMov = [];
 
         if (localStorage.getItem('favorite')) {
@@ -53,7 +54,6 @@ const Detailfilm = () => {
     };
 
     const removeFromFav = () => {
-
         let storedFavorites = localStorage.getItem('favorite');
         if (storedFavorites) {
             let favoritesArray = JSON.parse(storedFavorites);
@@ -64,39 +64,32 @@ const Detailfilm = () => {
     };
 
     return (
-        <div>
+        <div className="d-flex justify-content-center" style={{ minHeight: '100vh', alignItems: 'center', backgroundColor: '#f0f0f0' }}>
             {film && (
-                <div className="CardMovieDetail">
-                    <img
+                <Card className="mt-4 mb-4" style={{ width: '18rem', backgroundColor: 'black', color: 'white' }}>
+                    <Card.Img
+                        variant="top"
                         src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`}
                         alt={film.original_title}
-                        className="PosterMovieDetail"
                     />
-
-                    <div className="blocDetail">
-                        <h1>{film.original_title}</h1>
-                        <div>
-                            <p>Date de sortie:</p>
-                            <p>{film.release_date}</p>
-                        </div>
-                        <div>
-                            <p className="Resume">Resumé:</p>
-                            <p className="DecriptionMovie">{film.overview}</p>
-                        </div>
-
+                    <Card.Body>
+                        <Card.Title>{film.original_title}</Card.Title>
+                        <Card.Text>Date de sortie: {film.release_date}</Card.Text>
+                        <Card.Text>Résumé:</Card.Text>
+                        <Card.Text>{film.overview}</Card.Text>
                         <div className="BoutonsDetail">
-                            <button
-                                className={favorite ? "RemoveFav" : "AddFavories"}
+                            <Button
+                                variant={favorite ? "danger" : "primary"}
                                 onClick={favorite ? removeFromFav : favoriteMovie}
                             >
-                                <FontAwesomeIcon icon={faHeart} style={{ marginRight: '0.32px', color: favorite ? 'red' : 'black' }} />
+                                <FontAwesomeIcon icon={faHeart} style={{ marginRight: '0.32px', color: favorite ? 'red' : 'white' }} />
                                 <span>
                                     {favorite ? "Retirer des favoris" : "Ajouter aux favoris"}
                                 </span>
-                            </button>
+                            </Button>
                         </div>
-                    </div>
-                </div>
+                    </Card.Body>
+                </Card>
             )}
         </div>
     );
