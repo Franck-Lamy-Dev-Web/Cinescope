@@ -204,6 +204,10 @@ p, h1{
   color: #150808;
 }
 
+.texteCarou{
+  color:white;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
 
@@ -227,5 +231,8 @@ p, h1{
 }
 
 
+.texteCarou{
+  color: red;
+}
   
 }
