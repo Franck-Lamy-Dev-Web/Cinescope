@@ -12,11 +12,6 @@ background-color: rgb(35, 35, 35);
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .text-navbar-white {
   color: white !important;
@@ -207,4 +202,30 @@ p, h1{
 .boutonFavPage:hover{
   background-color: aliceblue;
   color: #150808;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+
+.text-navbar-white {
+  color: white !important;
+}
+
+.bg-navbar-black {
+  background-color: rgb(18, 18, 18) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("./assets/images/burger-bar.png") !important;
+}
+
+/* Pour ajuster la largeur et la hauteur du conteneur collapsible */
+.navbar-collapse-custom {
+  max-height: 500px; /* Hauteur maximale du menu */
+  overflow-y: auto; /* Pour permettre le défilement si le contenu dépasse la hauteur maximale */
+}
+
+
+  
 }

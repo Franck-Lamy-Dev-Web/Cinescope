@@ -1,12 +1,11 @@
 // Header.jsx
-
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
-
+import LogoCine from '../assets/images/logocinema.png';
 
 function NavSearch({ onSearchClick }) {
   const navigate = useNavigate();
@@ -16,12 +15,12 @@ function NavSearch({ onSearchClick }) {
   };
 
   return (
-    <Navbar expand="lg" className="bg-NavBar bg-black">
+    <Navbar expand="lg" className="bg-navbar-black"> 
       <Container fluid>
         <img
           className="imageLogo"
           onClick={toHome}
-          src="/logocinema.png"
+          src={LogoCine}
           height="50px"
           alt="logo_cinema"
         />

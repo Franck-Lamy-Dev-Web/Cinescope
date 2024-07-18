@@ -40,7 +40,7 @@ const AccueilFilm = ({ showSearch }) => {
                 <Carousel.Caption style={{ textAlign: 'left', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
                   <h1 style={{ fontSize: '3rem', fontStyle: 'arial', fontWeight: 'bold', paddingLeft: '0.7rem', paddingRight: '1rem' }}>{movie.original_title}</h1>
                   <h2 style={{ fontFamily: 'monospace', fontSize: '2rem', fontWeight: 'bold', paddingLeft: '0.7rem', paddingRight: '2rem' }}>Date de sortie : {movie.release_date}</h2>
-                  <p style={{ fontSize: '2rem', paddingLeft: '0.5rem' }}>{movie.overview}</p>
+                  {/* <p style={{ fontSize: '2rem', paddingLeft: '0.5rem' }}>{movie.overview}</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
