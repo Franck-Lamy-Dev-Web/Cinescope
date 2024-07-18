@@ -1,3 +1,8 @@
+https://cinescope-br80umqk9-francklamys-projects.vercel.app/
+
+
+
+
 Application de films et séries utilisant une API TMBD: https://developer.themoviedb.org/reference/intro/getting-started
 
 
