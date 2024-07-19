@@ -168,34 +168,34 @@ p, h1{
   flex-wrap: wrap;
   justify-content: space-around;
   margin-right: 5%;
-  background-color: #978585;
+  background-color: #313131;
   width: 100%;
   padding-right: 6%;
   padding-bottom: 5%;
   
 }
 
-.CardFavMovi {
+/* .CardFavMovi {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: rgb(212, 214, 215);
-}
+} */
 
-.imageFav {
+/* .imageFav {
   width: 90%;
   margin-top: 10%;
   border-radius: 15px;
-}
+} */
 
 
-.titreFav{
+/* .titreFav{
   margin-top: 5%;
 
-}
+} */
 
-.boutonFavPage{
+/* .boutonFavPage{
   margin-top: 5%;
   border-radius: 25px;
   background-color: #3d0606;
@@ -205,7 +205,7 @@ p, h1{
 .boutonFavPage:hover{
   background-color: aliceblue;
   color: #150808;
-}
+} */
 
 .texteCarou{
   color:white;
