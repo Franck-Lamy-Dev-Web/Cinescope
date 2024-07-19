@@ -28,6 +28,7 @@ const AccueilFilm = ({ showSearch }) => {
   }, [API_KEY]);
 
   return (
+    
     <div className='d-flex flex-wrap justify-content-center' style={{ height: '100%' }}>
       {showSearch ? (
         <SearchFilm />
