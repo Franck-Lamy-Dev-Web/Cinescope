@@ -6,6 +6,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Cardfilm from "./CardFilm";
 import SearchFilm from './SearchFilm';
 
+
 const AccueilFilm = ({ showSearch }) => {
   const [films, setFilms] = useState([]);
   const API_KEY = process.env.REACT_APP_API;
@@ -13,7 +14,7 @@ const AccueilFilm = ({ showSearch }) => {
   useEffect(() => {
     const filmPopular = async () => {
       try {
-        const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?language=fr-US&page=1&api_key=${API_KEY}`);
+        const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?language=fr-FR&page=1&api_key=${API_KEY}`);
         const result = response.data.results;
         if (result.length > 0) {
           setFilms(result);

@@ -1,11 +1,12 @@
 import React from "react";
+import ConstrucSite from '../assets/images/en_contruction.png';
 
 function PagesEnConstruction() {
 
     return(
 <div>
     <h1>Page en construction !</h1>
-    <img src="../assets/images/en_construction.png" alt="En construction" />
+    <img src={ConstrucSite} alt="En construction" />
 </div>
     );
 }
