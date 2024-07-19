@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Cardfilm from "./CardFilm";
 
+
 function SearchFilm() {
   const [searchTerm, setSearchTerm] = useState('');
   const [films, setFilms] = useState([]);
@@ -34,10 +35,12 @@ function SearchFilm() {
 
   return (
     <>
+    <div style={{backgroundColor: 'grey', width: '100%'}}>
+
       <div className='d-flex flex-wrap justify-content-center' style={{ height: '100%' }}>
         <div className='barHaut d-flex flex-column align-items-center mb-4'>
           <h1 className='titreBar'>CinéScope</h1>
-          <input className='w-50 m-lg-4' size="lg" type="text" placeholder="Titre de film" onChange={(event) => setSearchTerm(event.target.value)} />
+          <input className='w-500 m-lg-4' size="lg" type="text" placeholder="Titre de film" onChange={(event) => setSearchTerm(event.target.value)} />
         </div>
 
         <div className='d-flex flex-wrap justify-content-center' style={{ backgroundColor: 'black' }}>
@@ -48,6 +51,8 @@ function SearchFilm() {
           ))}
         </div>
       </div>
+      </div>
+
     </>
   );
 }

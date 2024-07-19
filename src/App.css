@@ -12,6 +12,9 @@ background-color: rgb(35, 35, 35);
   pointer-events: none;
 }
 
+.titreBar{
+  color: white;
+}
 
 .text-navbar-white {
   color: white !important;
