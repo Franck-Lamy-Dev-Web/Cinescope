@@ -40,7 +40,7 @@ const AccueilFilm = ({ showSearch }) => {
               <Carousel.Item key={movie.id} style={{ width: '100%' }}>
                 <img src={`https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}`} className='d-block w-100' alt='...' />
                 <Carousel.Caption style={{ textAlign: 'left', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                  <h1 style={{ fontSize: '1.5rem', fontStyle: 'arial', fontWeight: 'bold', paddingLeft: '0.7rem', paddingRight: '1rem' }}>{movie.original_title}</h1>
+                  <h1 style={{ fontSize: '1.5rem', fontStyle: 'arial', fontWeight: 'bold', paddingLeft: '0.3rem', paddingRight: '0.8rem' }}>{movie.title}</h1>
                   <h2 style={{ fontFamily: 'monospace', fontSize: '1.5rem', fontWeight: 'bold', paddingLeft: '0.3rem', paddingRight: '2rem' }}>Date de sortie : {movie.release_date}</h2>
                   {/* <p className="texteCarou" >{movie.overview}</p> */}
                 </Carousel.Caption>

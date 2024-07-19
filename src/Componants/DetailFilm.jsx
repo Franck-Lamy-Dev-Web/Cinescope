@@ -70,10 +70,10 @@ const Detailfilm = () => {
                     <Card.Img
                         variant="top"
                         src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`}
-                        alt={film.original_title}
+                        alt={film.title}
                     />
                     <Card.Body>
-                        <Card.Title>{film.original_title}</Card.Title>
+                        <Card.Title>Titre: {film.title}</Card.Title>
                         <Card.Text>Date de sortie: {film.release_date}</Card.Text>
                         <Card.Text>Résumé:</Card.Text>
                         <Card.Text>{film.overview}</Card.Text>

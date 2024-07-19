@@ -20,7 +20,7 @@ const Cardfilm = ({ movie }) => {
             <Card style={{ width: '18rem', margin: '10px' }}>
                 <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
                 <Card.Body>
-                    <Card.Title>{movie.titre}</Card.Title>
+                    <Card.Title>{movie.title}</Card.Title>
                     <Button variant="primary" onClick={() => { goToDetail(movie.id); console.log(movie.id); }}>
                         Plus de détails
                     </Button>
