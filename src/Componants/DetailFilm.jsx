@@ -15,7 +15,7 @@ const Detailfilm = () => {
     useEffect(() => {
         const fetchFilmData = async () => {
             try {
-                const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`);
+                const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=fr-FR`);
                 setFilm(response.data);
             } catch (error) {
                 console.error("Erreur lors de la récupération des données :", error);
@@ -23,7 +23,7 @@ const Detailfilm = () => {
         };
 
         fetchFilmData();
-    }, [id]); 
+    }, [id, API_KEY]);
 
     useEffect(() => {
         const storedFavorites = localStorage.getItem("favorite");
