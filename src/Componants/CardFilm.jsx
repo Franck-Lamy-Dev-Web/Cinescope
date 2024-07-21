@@ -17,13 +17,15 @@ const Cardfilm = ({ movie }) => {
 
     return (
         <div className="CardSearch">
-            <Card style={{ width: '18rem', margin: '10px' }}>
+            <Card style={{ width: '18rem', height: '36rem', margin: '1rem', padding: '0.2rem' }}>
                 <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
-                <Card.Body>
+                <Card.Body className="d-flex flex-column">
                     <Card.Title>{movie.title}</Card.Title>
-                    <Button variant="primary" onClick={() => { goToDetail(movie.id); console.log(movie.id); }}>
-                        Plus de détails
-                    </Button>
+                    <div className="mt-auto">
+                        <Button variant="primary" onClick={() => { goToDetail(movie.id); console.log(movie.id); }}>
+                            Plus de détails
+                        </Button>
+                    </div>
                 </Card.Body>
             </Card>
         </div>

@@ -24,7 +24,6 @@ function App() {
             <Route path="/" element={<AccueilFilm />} />
             <Route path='/PageEnConstruction' element={<PagesEnConstruction />} />
             <Route path='/recherche_genre' element={<RechercheGenre />} />
-            {/* <Route path='/recherche_par_titre' element={<RechercheTitre />} /> */}
             <Route path='/recherche_par_titre' element={<SearchFilm />} />
           </Routes>
         </Container>
