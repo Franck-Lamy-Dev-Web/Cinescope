@@ -20,25 +20,22 @@ function NavSearch({ onSearchClick }) {
           <img src={LogoCine} height="50px" alt="logo_cinema" />
         </Link>
 
-        <Navbar.Brand as={Link} to="/" className="text-navbar-white">CinéScope</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="text-navbar-white">
+          CinéScope
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
             <Nav.Link as={Link} to="/" className="text-navbar-white">Accueil</Nav.Link>
             <Nav.Link as={Link} to="/Favories" className="text-navbar-white">Mes favoris</Nav.Link>
-            <NavDropdown title={<span className="text-white">Plus</span>} id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to="/PageEnConstruction">Séries TV</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/PageEnConstruction">Recherche par acteurs</NavDropdown.Item>
+            <NavDropdown title={<span className="text-white">Recherche film:</span>} id="navbarScrollingDropdown">
+              <NavDropdown.Item as={Link} to="/recherche_par_titre">Par Titre</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/recherche_genre">Par Genre</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/PageEnConstruction">Par Acteurs</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/PageEnConstruction">Recherche par genre</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/PageEnConstruction">Séries TV</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <img
-            src="/chercher.png"
-            alt="recherche"
-            style={{ width: '1.5rem', marginRight: '2rem', cursor: 'pointer' }}
-            onClick={onSearchClick}
-          />
         </Navbar.Collapse>
       </Container>
     </Navbar>
