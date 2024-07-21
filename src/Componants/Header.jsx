@@ -25,7 +25,7 @@ function NavSearch({ onSearchClick }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+          <Nav className="me-auto my-2 my-lg-0"  navbarScroll>
             <Nav.Link as={Link} to="/" className="text-navbar-white">Accueil</Nav.Link>
             <Nav.Link as={Link} to="/Favories" className="text-navbar-white">Mes favoris</Nav.Link>
             <NavDropdown title={<span className="text-white">Recherche film:</span>} id="navbarScrollingDropdown">
