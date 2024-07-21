@@ -2,10 +2,12 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import photoSalle from '../assets/images/vue-salle-cinema.jpg';
+import { useNavigate } from "react-router-dom";
 
 const RechercheGenre = () => {
   const [listeGenres, setListeGenres] = useState([]);
   const API_KEY = process.env.REACT_APP_API;
+  const navigate = useNavigate();
 
   useEffect(() => {
     const ListeParGenre = async () => {
@@ -26,10 +28,16 @@ const RechercheGenre = () => {
     ListeParGenre();
   }, [API_KEY]);
 
+  const HandleGenreChange = (event) =>{
+    navigate('/PageEnConstruction');
+  }
+
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
       <h1>Recherche par genre</h1>
-      <select style={{ marginBottom: '20px', padding: '10px', fontSize: '16px' }}>
+      <select style={{ marginBottom: '20px', padding: '10px', fontSize: '16px' }}
+      onChange={HandleGenreChange}
+      >
         {listeGenres.map((genre) => (
           <option key={genre.id} value={genre.id}>{genre.name}</option>
         ))}
