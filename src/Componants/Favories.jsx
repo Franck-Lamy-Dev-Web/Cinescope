@@ -41,18 +41,20 @@ const Favorites = () => {
     return (
         <div className="result d-flex flex-wrap justify-content-center" style={{ backgroundColor: '#313131', padding: '20px' }}>
             {favorites.map((fav, index) => (
-                <Card key={index} className="m-2" style={{ width: '18rem', backgroundColor: 'black', color: 'white', flex: '0 1 18rem' }}>
+                <Card key={index} className="m-2 d-flex flex-column justify-content-between" style={{ width: '18rem', backgroundColor: 'black', color: 'white', flex: '0 1 18rem' }}>
                     <Card.Img
                         variant="top"
                         src={`https://image.tmdb.org/t/p/w500/${fav.poster_path}`}
                         alt={fav.title}
                     />
-                    <Card.Body>
-                        <Card.Title>{fav.title}</Card.Title>
-                        <Card.Text>Date de sortie: {fav.release_date}</Card.Text>
-                        <Card.Text>Résumé:</Card.Text>
-                        <Card.Text>{fav.overview}</Card.Text>
-                        <div className="BoutonsDetail">
+                    <Card.Body className="d-flex flex-column">
+                        <div>
+                            <Card.Title>{fav.title}</Card.Title>
+                            <Card.Text>Date de sortie: {fav.release_date}</Card.Text>
+                            <Card.Text>Résumé:</Card.Text>
+                            <Card.Text>{fav.overview}</Card.Text>
+                        </div>
+                        <div className="mt-auto BoutonsDetail d-flex justify-content-center">
                             <Button
                                 variant="danger"
                                 onClick={() => removeFromFav(fav.id)}

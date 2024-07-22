@@ -96,3 +96,7 @@ const Detailfilm = () => {
 };
 
 export default Detailfilm;
+
+
+//URL de recherche série par titre 
+// url = https://api.themoviedb.org/3/search/tv?api_key=${api_key}&query=${title}&language=fr-FR&page=1`);

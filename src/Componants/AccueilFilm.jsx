@@ -4,7 +4,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import Cardfilm from "./CardFilm";
 import SearchFilm from './SearchFilm';
 
-// Hook personnalisé pour obtenir la taille de la fenêtre
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,

@@ -11,6 +11,7 @@ import Footer from './Componants/Footer';
 import RechercheGenre from './Componants/RechercheGenre';
 import { Container } from 'react-bootstrap';
 import SearchFilm from './Componants/SearchFilm';
+import SeriesTV from './Componants/SeriesTV';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path='/PageEnConstruction' element={<PagesEnConstruction />} />
             <Route path='/recherche_genre' element={<RechercheGenre />} />
             <Route path='/recherche_par_titre' element={<SearchFilm />} />
+            <Route path='/series_tv' element={<SeriesTV />} />
           </Routes>
         </Container>
         <Footer />
