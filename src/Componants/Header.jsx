@@ -31,7 +31,7 @@ function NavSearch({ onSearchClick }) {
             <NavDropdown title={<span className="text-white">Recherche film:</span>} id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="/recherche_par_titre">Par Titre</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/recherche_genre">Par Genre</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/PageEnConstruction">Par Acteurs</NavDropdown.Item>
+              {/* <NavDropdown.Item as={Link} to="/PageEnConstruction">Par Acteurs</NavDropdown.Item> */}
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/PageEnConstruction">Séries TV</NavDropdown.Item>
             </NavDropdown>
