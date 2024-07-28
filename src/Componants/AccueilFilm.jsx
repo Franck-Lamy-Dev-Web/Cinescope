@@ -55,6 +55,7 @@ const AccueilFilm = ({ showSearch }) => {
         <SearchFilm />
       ) : (
         <>
+        <h1 className="titrePopulaire">Les 20 films les plus populaires</h1>
           <Carousel style={{ width: '100%' }}>
             {films.map((movie) => (
               <Carousel.Item key={movie.id} style={{ width: '100%' }}>

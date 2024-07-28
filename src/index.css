@@ -43,3 +43,8 @@ body {
 .logoTitre {
   display: flex;
 }
+
+.titrePopulaire{
+  color: rgb(67, 66, 66);
+  font-size: 1rem;
+}
