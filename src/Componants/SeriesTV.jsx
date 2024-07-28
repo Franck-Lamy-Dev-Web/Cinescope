@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import CardFilm from "./CardFilm";
+import { Container } from 'react-bootstrap';
+import CardSeries from './CardSeries';
 
 const SeriesTV = () => {
     const [series, setSeries] = useState([]);
@@ -26,10 +26,10 @@ const SeriesTV = () => {
 
     return (
         <Container>
-            <h1 className="my-4">Séries TV Populaires</h1>
+            <h1 className="my-4" style={{textAlign:'center'}}>Séries TV Populaires</h1>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {series.map((serie) => (
-                        <CardFilm movie={serie} />
+                {series.map((serie) => (
+                    <CardSeries key={serie.id} movie={serie} />
                 ))}
             </div>
         </Container>

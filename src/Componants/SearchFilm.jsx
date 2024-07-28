@@ -19,7 +19,7 @@ function SearchFilm() {
         const result = response.data.results;
 
         const filmsData = result
-          .filter(film => film.poster_path)  // Filtrer les films avec une image
+          .filter(film => film.poster_path)
           .map(film => ({
             id: film.id,
             titre: film.title,

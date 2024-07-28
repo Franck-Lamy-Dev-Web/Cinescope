@@ -34,6 +34,7 @@ function NavSearch({ onSearchClick }) {
               {/* <NavDropdown.Item as={Link} to="/PageEnConstruction">Par Acteurs</NavDropdown.Item> */}
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/series_tv">Séries TV</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/series_recherche">Recherche Séries TV</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

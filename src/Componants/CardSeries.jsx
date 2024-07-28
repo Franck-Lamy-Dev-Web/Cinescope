@@ -3,16 +3,11 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from 'react-router-dom';
 
-const Cardfilm = ({ movie, type }) => {
+const CardSeries = ({ movie }) => {
     const navigate = useNavigate();
 
-    const goToDetail = (id, type) => {
-        // if (type === 'movie') {
-        //     navigate(`/DétailFilm/${id}`);
-        // } else if (type === 'tv') {
-        //     navigate(`/DétailSerie/${id}`);
-        // }
-        navigate(`/DétailFilm/${id}`);
+    const goToDetail = (id) => {
+        navigate(`/DétailSerie/${id}`);
     };
 
     if (!movie.poster_path) {
@@ -25,10 +20,10 @@ const Cardfilm = ({ movie, type }) => {
                 <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
                 <Card.Body className="d-flex flex-column">
                     <Card.Title>
-                        Titre: {movie.title ? movie.title : movie.name}
+                        Titre: {movie.name}
                     </Card.Title>
                     <div className="mt-auto">
-                        <Button variant="primary" onClick={() => goToDetail(movie.id, type)}>
+                        <Button variant="primary" onClick={() => goToDetail(movie.id)}>
                             Plus de détails
                         </Button>
                     </div>
@@ -38,4 +33,4 @@ const Cardfilm = ({ movie, type }) => {
     );
 };
 
-export default Cardfilm;
+export default CardSeries;
