@@ -1,4 +1,4 @@
-https://cinescope-br80umqk9-francklamys-projects.vercel.app/
+[https://cinescope-br80umqk9-francklamys-projects.vercel.app/](https://cinescope-vert.vercel.app/)
 
 
 
